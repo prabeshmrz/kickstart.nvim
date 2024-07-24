@@ -22,6 +22,7 @@ return {
       opts = {
         handlers = {
           ['jdtls'] = function()
+            require('java').setup()
             require('lspconfig').jdtls.setup {}
           end,
         },

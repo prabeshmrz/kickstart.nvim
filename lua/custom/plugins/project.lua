@@ -3,6 +3,9 @@ return {
   config = function()
     require('project_nvim').setup {
       patterns = { '.git', '_darcs', '.hg', '.bzr', '.svn', 'Makefile', 'package.json', 'mvnw', 'mvnw.cmd' },
+      outputs = {
+        require('projector_dbee').OutputBuilder:new(),
+      },
     }
   end,
 }

@@ -704,6 +704,16 @@ require('lazy').setup({
       --  into multiple repos for maintenance purposes.
       'hrsh7th/cmp-nvim-lsp',
       'hrsh7th/cmp-path',
+      {
+        'MattiasMTS/cmp-dbee',
+        ft = 'sql', -- optional
+      },
+
+      -- If you want to add a bunch of pre-configured snippets,
+      --    you can use this plugin to help you. It even has snippets
+      --    for various frameworks/libraries/etc. but you will have to
+      --    set up the ones that are useful for you.
+      -- 'rafamadriz/friendly-snippets',
     },
     config = function()
       -- See `:help cmp`
@@ -780,6 +790,7 @@ require('lazy').setup({
           { name = 'nvim_lsp' },
           { name = 'luasnip' },
           { name = 'path' },
+          { name = 'cmp-dbee' },
         },
       }
     end,
