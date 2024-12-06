@@ -1,11 +1,27 @@
+---@diagnostic disable: undefined-global
 return {
   'folke/snacks.nvim',
   priority = 1000,
   lazy = false,
-  ---@type snacks.Config
+
   opts = {
     bigfile = { enabled = true },
-    dashboard = { enabled = true },
+    dashboard = {
+      enabled = true,
+      sections = {
+        { section = 'header' },
+        { section = 'keys', gap = 1, padding = 1 },
+        { section = 'startup' },
+        {
+          section = 'terminal',
+          cmd = 'pokemon-colorscripts-go -n articuno --no-title; sleep .1',
+          random = 10,
+          pane = 2,
+          indent = 4,
+          height = 30,
+        },
+      },
+    },
     notifier = {
       enabled = true,
       timeout = 3000,
