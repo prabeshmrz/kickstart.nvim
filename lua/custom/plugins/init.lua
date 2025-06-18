@@ -2,4 +2,11 @@
 --  I promise not to create any merge conflicts in this directory :)
 --
 -- See the kickstart.nvim README for more information
-return {}
+return {
+  -- {
+  --   dir = '/d/LUCIFER/PERSONAL/projects/NeovimPlugin/present.nvim/',
+  --  config = function()
+  --   require 'present'
+  --  end,
+  --  }, **/
+}
