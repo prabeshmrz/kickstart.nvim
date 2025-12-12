@@ -1,5 +1,5 @@
 return {
-  {
+  --[[ {
     'yetone/avante.nvim',
     dependencies = {
       'nvim-tree/nvim-web-devicons',
@@ -14,5 +14,5 @@ return {
     },
     build = 'make',
     opts = { provider = 'copilot' },
-  },
+  }, --]]
 }

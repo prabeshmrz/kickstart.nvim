@@ -1,5 +1,5 @@
 return {
-  'HakonHarnes/img-clip.nvim',
+  --[[  'HakonHarnes/img-clip.nvim',
   event = 'VeryLazy',
   opts = {
     -- add options here
@@ -48,5 +48,5 @@ return {
       max_height_window_percentage = 50,
       kitty_method = 'normal',
     },
-  },
+  }, ]] --
 }
